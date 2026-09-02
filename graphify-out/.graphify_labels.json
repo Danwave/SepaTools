@@ -1,0 +1,17 @@
+{
+  "0": ".GeneratePaymentInformation",
+  "1": "SepaTransfer",
+  "2": "FinancialFileFormats.SEPA",
+  "3": "SepaIbanData",
+  "4": "Form1",
+  "5": "SepaDebitTransfer",
+  "6": "Resources",
+  "7": "Form1.cs",
+  "8": "XmlValidator",
+  "9": "SepaRuleException",
+  "10": "Instrucciones para agentes — SepaTools",
+  "11": "SepaSequenceTypeUtils",
+  "12": "XmlElementExtension.cs",
+  "13": "Sepa Tools Windows/Properties/AssemblyInfo.cs",
+  "14": "SepaWriter/Properties/AssemblyInfo.cs"
+}
