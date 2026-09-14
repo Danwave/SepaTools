@@ -10,8 +10,8 @@
   "8": "XmlValidator",
   "9": "SepaRuleException",
   "10": "Instrucciones para agentes — SepaTools",
-  "11": "SepaSequenceTypeUtils",
-  "12": "XmlElementExtension.cs",
+  "11": "SepaCreditTransfer",
+  "12": "SepaSequenceType",
   "13": "Sepa Tools Windows/Properties/AssemblyInfo.cs",
   "14": "SepaWriter/Properties/AssemblyInfo.cs"
 }
