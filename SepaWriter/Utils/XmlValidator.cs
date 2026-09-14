@@ -4,7 +4,6 @@ using System.IO;
 using System.Reflection;
 using System.Xml;
 using System.Xml.Schema;
-using log4net;
 
 namespace FinancialFileFormats.SEPA.Utils
 {
@@ -14,8 +13,6 @@ namespace FinancialFileFormats.SEPA.Utils
     /// </summary>
     public class XmlValidator
     {
-        private static readonly ILog Log = LogManager.GetLogger(typeof(XmlValidator));
-
         private static readonly Dictionary<SepaSchema, XmlValidator> validators = new Dictionary<SepaSchema, XmlValidator>();
 
         /// <summary>
@@ -96,7 +93,7 @@ namespace FinancialFileFormats.SEPA.Utils
             }
             catch (Exception ex)
             {
-                Log.Error("Validation issue due to an exception", ex);
+                System.Diagnostics.Trace.TraceError("Validation issue due to an exception: {0}", ex);
                 result = false;
             }
 
@@ -108,7 +105,7 @@ namespace FinancialFileFormats.SEPA.Utils
             if (e.Severity != XmlSeverityType.Error && e.Severity != XmlSeverityType.Warning) return;
 
             result = false;
-            Log.ErrorFormat("Validation issue at line: {0}, position: {1} \"{2}\"", 
+            System.Diagnostics.Trace.TraceError("Validation issue at line: {0}, position: {1} \"{2}\"",
                 e.Exception.LineNumber, e.Exception.LinePosition, 
                 e.Exception.Message);
         }

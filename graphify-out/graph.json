@@ -4,6 +4,25 @@
   "graph": {},
   "nodes": [
     {
+      "id": "sepawriter_utils_sepaschemautils_financialfileformats_sepa_utils_sepaschemautils",
+      "label": "SepaSchemaUtils",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": ".GeneratePaymentInformation",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA.Utils",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "norm_label": "sepaschemautils",
+      "source_file": "SepaWriter/Utils/SepaSchemaUtils.cs",
+      "source_location": "L5"
+    },
+    {
       "id": "sepawriter_utils_stringutils_financialfileformats_sepa_utils_stringutils",
       "label": "StringUtils",
       "_callable": true,
@@ -80,42 +99,80 @@
       "source_location": "L11"
     },
     {
-      "id": "sepawriter_utils_sepasequencetypeutils_financialfileformats_sepa_utils_sepasequencetypeutils",
-      "label": "SepaSequenceTypeUtils",
+      "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer",
+      "label": "SepaCreditTransfer",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 11,
-      "community_name": "SepaSequenceTypeUtils",
+      "community_name": "SepaCreditTransfer",
       "file_type": "code",
       "metadata": {
-        "namespace": "FinancialFileFormats.SEPA.Utils",
+        "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s20"
+          "s119"
         ]
       },
-      "norm_label": "sepasequencetypeutils",
-      "source_file": "SepaWriter/Utils/SepaSequenceTypeUtils.cs",
-      "source_location": "L5"
+      "norm_label": "sepacredittransfer",
+      "source_file": "SepaWriter/SepaCreditTransfer.cs",
+      "source_location": "L13"
     },
     {
-      "id": "sepawriter_utils_xmlelementextension_financialfileformats_sepa_utils_xmlelementextension",
-      "label": "XmlElementExtension",
+      "id": "sepawriter_sepacredittransfertransaction_financialfileformats_sepa_sepacredittransfertransaction",
+      "label": "SepaCreditTransferTransaction",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "SepaCreditTransfer",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s3"
+        ]
+      },
+      "norm_label": "sepacredittransfertransaction",
+      "source_file": "SepaWriter/SepaCreditTransferTransaction.cs",
+      "source_location": "L6"
+    },
+    {
+      "id": "sepawriter_sepapaymentnormalization_financialfileformats_sepa_sepapaymentnormalization",
+      "label": "SepaPaymentNormalization",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "SepaCreditTransfer",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s126"
+        ]
+      },
+      "norm_label": "sepapaymentnormalization",
+      "source_file": "SepaWriter/SepaPaymentNormalization.cs",
+      "source_location": "L9"
+    },
+    {
+      "id": "sepawriter_sepasequencetype_financialfileformats_sepa_sepasequencetype",
+      "label": "SepaSequenceType",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "XmlElementExtension.cs",
+      "community_name": "SepaSequenceType",
       "file_type": "code",
       "metadata": {
-        "namespace": "FinancialFileFormats.SEPA.Utils",
+        "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s39"
+          "s95"
         ]
       },
-      "norm_label": "xmlelementextension",
-      "source_file": "SepaWriter/Utils/XmlElementExtension.cs",
-      "source_location": "L9"
+      "norm_label": "sepasequencetype",
+      "source_file": "SepaWriter/SepaSequenceType.cs",
+      "source_location": "L8"
     },
     {
       "id": "sepawriter_constant_financialfileformats_sepa_constant",
@@ -137,65 +194,8 @@
       "source_location": "L6"
     },
     {
-      "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer",
-      "label": "SepaCreditTransfer",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s119"
-        ]
-      },
-      "norm_label": "sepacredittransfer",
-      "source_file": "SepaWriter/SepaCreditTransfer.cs",
-      "source_location": "L13"
-    },
-    {
-      "id": "sepawriter_sepapaymentnormalization_financialfileformats_sepa_sepapaymentnormalization",
-      "label": "SepaPaymentNormalization",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s126"
-        ]
-      },
-      "norm_label": "sepapaymentnormalization",
-      "source_file": "SepaWriter/SepaPaymentNormalization.cs",
-      "source_location": "L9"
-    },
-    {
-      "id": "sepawriter_sepasequencetype_financialfileformats_sepa_sepasequencetype",
-      "label": "SepaSequenceType",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s95"
-        ]
-      },
-      "norm_label": "sepasequencetype",
-      "source_file": "SepaWriter/SepaSequenceType.cs",
-      "source_location": "L8"
-    },
-    {
-      "id": "sepawriter_utils_sepaschemautils_financialfileformats_sepa_utils_sepaschemautils",
-      "label": "SepaSchemaUtils",
+      "id": "sepawriter_utils_sepasequencetypeutils_financialfileformats_sepa_utils_sepasequencetypeutils",
+      "label": "SepaSequenceTypeUtils",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
@@ -208,28 +208,28 @@
           "s20"
         ]
       },
-      "norm_label": "sepaschemautils",
-      "source_file": "SepaWriter/Utils/SepaSchemaUtils.cs",
+      "norm_label": "sepasequencetypeutils",
+      "source_file": "SepaWriter/Utils/SepaSequenceTypeUtils.cs",
       "source_location": "L5"
     },
     {
-      "id": "sepawriter_sepacredittransfertransaction_financialfileformats_sepa_sepacredittransfertransaction",
-      "label": "SepaCreditTransferTransaction",
+      "id": "sepawriter_utils_xmlelementextension_financialfileformats_sepa_utils_xmlelementextension",
+      "label": "XmlElementExtension",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "SepaIbanData",
+      "community": 2,
+      "community_name": "FinancialFileFormats.SEPA",
       "file_type": "code",
       "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
+        "namespace": "FinancialFileFormats.SEPA.Utils",
         "scope_chain": [
-          "s3"
+          "s39"
         ]
       },
-      "norm_label": "sepacredittransfertransaction",
-      "source_file": "SepaWriter/SepaCreditTransferTransaction.cs",
-      "source_location": "L6"
+      "norm_label": "xmlelementextension",
+      "source_file": "SepaWriter/Utils/XmlElementExtension.cs",
+      "source_location": "L9"
     },
     {
       "id": "sepawriter_sepaibandata_financialfileformats_sepa_sepaibandata",
@@ -301,12 +301,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": "sepadebittransfer",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L20"
+      "source_location": "L18"
     },
     {
       "id": "sepawriter_sepadebittransfertransaction_financialfileformats_sepa_sepadebittransfertransaction",
@@ -397,12 +397,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA.Utils",
         "scope_chain": [
-          "s160"
+          "s144"
         ]
       },
       "norm_label": "xmlvalidator",
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L15"
+      "source_location": "L14"
     },
     {
       "id": "sepawriter_separuleexception_financialfileformats_sepa_separuleexception",
@@ -489,12 +489,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": ".generatepaymentinformation()",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L235"
+      "source_location": "L233"
     },
     {
       "id": "sepawriter_sepadebittransfer_financialfileformats_sepa_sepadebittransfer_generatetransaction",
@@ -507,12 +507,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": ".generatetransaction()",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L289"
+      "source_location": "L287"
     },
     {
       "id": "sepawriter_sepadebittransfer_financialfileformats_sepa_sepadebittransfer_generatexml",
@@ -525,12 +525,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": ".generatexml()",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L185"
+      "source_location": "L183"
     },
     {
       "id": "sepawriter_utils_sepaschemautils_financialfileformats_sepa_utils_sepaschemautils_sepaschematostring",
@@ -695,24 +695,6 @@
       "source_location": "L48"
     },
     {
-      "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer_checkschema",
-      "label": ".CheckSchema()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SepaTransfer",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s119"
-        ]
-      },
-      "norm_label": ".checkschema()",
-      "source_file": "SepaWriter/SepaCreditTransfer.cs",
-      "source_location": "L198"
-    },
-    {
       "id": "sepawriter_sepadebittransfer_financialfileformats_sepa_sepadebittransfer_checkschema",
       "label": ".CheckSchema()",
       "_callable": true,
@@ -723,12 +705,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": ".checkschema()",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L310"
+      "source_location": "L308"
     },
     {
       "id": "sepawriter_sepatransfer_financialfileformats_sepa_sepatransfer_asxmlstring",
@@ -803,12 +785,48 @@
       "source_location": "L108"
     },
     {
+      "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer_addcredittransfer",
+      "label": ".AddCreditTransfer()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "SepaCreditTransfer",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s119"
+        ]
+      },
+      "norm_label": ".addcredittransfer()",
+      "source_file": "SepaWriter/SepaCreditTransfer.cs",
+      "source_location": "L85"
+    },
+    {
+      "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer_checkschema",
+      "label": ".CheckSchema()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "SepaCreditTransfer",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s119"
+        ]
+      },
+      "norm_label": ".checkschema()",
+      "source_file": "SepaWriter/SepaCreditTransfer.cs",
+      "source_location": "L198"
+    },
+    {
       "id": "sepawriter_utils_sepasequencetypeutils_financialfileformats_sepa_utils_sepasequencetypeutils_sepasequencetypefromstring",
       "label": ".SepaSequenceTypeFromString()",
       "_callable": true,
       "_origin": "ast",
-      "community": 11,
-      "community_name": "SepaSequenceTypeUtils",
+      "community": 2,
+      "community_name": "FinancialFileFormats.SEPA",
       "file_type": "code",
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA.Utils",
@@ -825,8 +843,8 @@
       "label": ".SepaSequenceTypeToString()",
       "_callable": true,
       "_origin": "ast",
-      "community": 11,
-      "community_name": "SepaSequenceTypeUtils",
+      "community": 2,
+      "community_name": "FinancialFileFormats.SEPA",
       "file_type": "code",
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA.Utils",
@@ -843,8 +861,8 @@
       "label": ".NewElement()",
       "_callable": true,
       "_origin": "ast",
-      "community": 12,
-      "community_name": "XmlElementExtension.cs",
+      "community": 2,
+      "community_name": "FinancialFileFormats.SEPA",
       "file_type": "code",
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA.Utils",
@@ -1037,24 +1055,6 @@
       "source_location": "L22"
     },
     {
-      "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer_addcredittransfer",
-      "label": ".AddCreditTransfer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "SepaDebitTransfer",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s119"
-        ]
-      },
-      "norm_label": ".addcredittransfer()",
-      "source_file": "SepaWriter/SepaCreditTransfer.cs",
-      "source_location": "L85"
-    },
-    {
       "id": "sepawriter_sepadebittransfer_financialfileformats_sepa_sepadebittransfer_adddebittransfer",
       "label": ".AddDebitTransfer()",
       "_callable": true,
@@ -1065,12 +1065,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": ".adddebittransfer()",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L168"
+      "source_location": "L166"
     },
     {
       "id": "sepawriter_sepadebittransfer_financialfileformats_sepa_sepadebittransfer_gettransaction",
@@ -1083,12 +1083,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": ".gettransaction()",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L119"
+      "source_location": "L117"
     },
     {
       "id": "sepawriter_sepadebittransfer_financialfileformats_sepa_sepadebittransfer_gettransactions",
@@ -1101,12 +1101,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": ".gettransactions()",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L124"
+      "source_location": "L122"
     },
     {
       "id": "sepawriter_sepatransfer_financialfileformats_sepa_sepatransfer_addtransfer",
@@ -1125,6 +1125,24 @@
       "norm_label": ".addtransfer()",
       "source_file": "SepaWriter/SepaTransfer.cs",
       "source_location": "L118"
+    },
+    {
+      "id": "sepawriter_sepatransfer_financialfileformats_sepa_sepatransfer_checktransactionidunicity",
+      "label": ".CheckTransactionIdUnicity()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "SepaDebitTransfer",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s74"
+        ]
+      },
+      "norm_label": ".checktransactionidunicity()",
+      "source_file": "SepaWriter/SepaTransfer.cs",
+      "source_location": "L139"
     },
     {
       "id": "sepa_tools_windows_program_sepatools_program_main",
@@ -1155,12 +1173,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA.Utils",
         "scope_chain": [
-          "s160"
+          "s144"
         ]
       },
       "norm_label": ".getvalidator()",
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L26"
+      "source_location": "L23"
     },
     {
       "id": "sepawriter_utils_xmlvalidator_financialfileformats_sepa_utils_xmlvalidator_validate",
@@ -1173,12 +1191,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA.Utils",
         "scope_chain": [
-          "s160"
+          "s144"
         ]
       },
       "norm_label": ".validate()",
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L68"
+      "source_location": "L65"
     },
     {
       "id": "sepawriter_utils_xmlvalidator_financialfileformats_sepa_utils_xmlvalidator_validationeventhandler",
@@ -1191,12 +1209,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA.Utils",
         "scope_chain": [
-          "s160"
+          "s144"
         ]
       },
       "norm_label": ".validationeventhandler()",
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L106"
+      "source_location": "L103"
     },
     {
       "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer_checkmandatorydata",
@@ -1227,12 +1245,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": ".checkmandatorydata()",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L153"
+      "source_location": "L151"
     },
     {
       "id": "sepawriter_sepatransfer_financialfileformats_sepa_sepatransfer_checkmandatorydata",
@@ -1251,24 +1269,6 @@
       "norm_label": ".checkmandatorydata()",
       "source_file": "SepaWriter/SepaTransfer.cs",
       "source_location": "L159"
-    },
-    {
-      "id": "sepawriter_sepatransfer_financialfileformats_sepa_sepatransfer_checktransactionidunicity",
-      "label": ".CheckTransactionIdUnicity()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "SepaRuleException",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s74"
-        ]
-      },
-      "norm_label": ".checktransactionidunicity()",
-      "source_file": "SepaWriter/SepaTransfer.cs",
-      "source_location": "L139"
     },
     {
       "id": "sepawriter_utils_ibanvalidationutils_financialfileformats_sepa_utils_ibanvalidationutils_isibanchecksumvalid",
@@ -1331,6 +1331,17 @@
       "norm_label": "xmlelement",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "sepawriter_utils_sepaschemautils",
+      "label": "SepaSchemaUtils.cs",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": ".GeneratePaymentInformation",
+      "file_type": "code",
+      "norm_label": "sepaschemautils.cs",
+      "source_file": "SepaWriter/Utils/SepaSchemaUtils.cs",
+      "source_location": "L1"
     },
     {
       "id": "sepawriter_utils_sepaschemautils_cs_sepaschema",
@@ -1441,6 +1452,17 @@
       "norm_label": "list",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "sepawriter_sepaschema",
+      "label": "SepaSchema.cs",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SepaTransfer",
+      "file_type": "code",
+      "norm_label": "sepaschema.cs",
+      "source_file": "SepaWriter/SepaSchema.cs",
+      "source_location": "L1"
     },
     {
       "id": "sepawriter_sepaschema_financialfileformats_sepa_sepaschema_pain00100103",
@@ -1780,48 +1802,190 @@
       "source_location": "L51"
     },
     {
-      "id": "sepawriter_utils_sepasequencetypeutils",
-      "label": "SepaSequenceTypeUtils.cs",
+      "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer_debtor",
+      "label": "Debtor",
       "_origin": "ast",
       "community": 11,
-      "community_name": "SepaSequenceTypeUtils",
+      "community_name": "SepaCreditTransfer",
       "file_type": "code",
-      "norm_label": "sepasequencetypeutils.cs",
-      "source_file": "SepaWriter/Utils/SepaSequenceTypeUtils.cs",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s119"
+        ]
+      },
+      "norm_label": "debtor",
+      "source_file": "SepaWriter/SepaCreditTransfer.cs",
+      "source_location": "L55"
+    },
+    {
+      "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer_debtoraccountcurrency",
+      "label": "DebtorAccountCurrency",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "SepaCreditTransfer",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s119"
+        ]
+      },
+      "norm_label": "debtoraccountcurrency",
+      "source_file": "SepaWriter/SepaCreditTransfer.cs",
+      "source_location": "L18"
+    },
+    {
+      "id": "sepawriter_sepacredittransfertransaction",
+      "label": "SepaCreditTransferTransaction.cs",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "SepaCreditTransfer",
+      "file_type": "code",
+      "norm_label": "sepacredittransfertransaction.cs",
+      "source_file": "SepaWriter/SepaCreditTransferTransaction.cs",
       "source_location": "L1"
     },
     {
-      "id": "sepawriter_utils_sepasequencetypeutils_cs_sepasequencetype",
-      "label": "SepaSequenceType",
+      "id": "sepawriter_sepacredittransfertransaction_financialfileformats_sepa_sepacredittransfertransaction_creditor",
+      "label": "Creditor",
       "_origin": "ast",
       "community": 11,
-      "community_name": "SepaSequenceTypeUtils",
+      "community_name": "SepaCreditTransfer",
       "file_type": "code",
-      "norm_label": "sepasequencetype",
-      "source_file": "",
-      "source_location": ""
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s3"
+        ]
+      },
+      "norm_label": "creditor",
+      "source_file": "SepaWriter/SepaCreditTransferTransaction.cs",
+      "source_location": "L12"
     },
     {
-      "id": "sepawriter_utils_xmlelementextension",
-      "label": "XmlElementExtension.cs",
+      "id": "sepawriter_sepapaymentnormalization",
+      "label": "SepaPaymentNormalization.cs",
       "_origin": "ast",
-      "community": 12,
-      "community_name": "XmlElementExtension.cs",
+      "community": 11,
+      "community_name": "SepaCreditTransfer",
       "file_type": "code",
-      "norm_label": "xmlelementextension.cs",
-      "source_file": "SepaWriter/Utils/XmlElementExtension.cs",
+      "norm_label": "sepapaymentnormalization.cs",
+      "source_file": "SepaWriter/SepaPaymentNormalization.cs",
       "source_location": "L1"
     },
     {
-      "id": "sepawriter_utils_xmlelementextension_cs_xmlelement",
-      "label": "XmlElement",
+      "id": "sepawriter_sepapaymentnormalization_financialfileformats_sepa_sepapaymentnormalization_sepad",
+      "label": "SepaD",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "SepaCreditTransfer",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s126"
+        ]
+      },
+      "norm_label": "sepad",
+      "source_file": "SepaWriter/SepaPaymentNormalization.cs",
+      "source_location": "L12"
+    },
+    {
+      "id": "sepawriter_sepapaymentnormalization_financialfileformats_sepa_sepapaymentnormalization_sepap",
+      "label": "SepaP",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "SepaCreditTransfer",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s126"
+        ]
+      },
+      "norm_label": "sepap",
+      "source_file": "SepaWriter/SepaPaymentNormalization.cs",
+      "source_location": "L13"
+    },
+    {
+      "id": "sepawriter_sepasequencetype",
+      "label": "SepaSequenceType.cs",
       "_origin": "ast",
       "community": 12,
-      "community_name": "XmlElementExtension.cs",
+      "community_name": "SepaSequenceType",
       "file_type": "code",
-      "norm_label": "xmlelement",
-      "source_file": "",
-      "source_location": ""
+      "norm_label": "sepasequencetype.cs",
+      "source_file": "SepaWriter/SepaSequenceType.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "sepawriter_sepasequencetype_financialfileformats_sepa_sepasequencetype_final",
+      "label": "FINAL",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "SepaSequenceType",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s95"
+        ]
+      },
+      "norm_label": "final",
+      "source_file": "SepaWriter/SepaSequenceType.cs",
+      "source_location": "L17"
+    },
+    {
+      "id": "sepawriter_sepasequencetype_financialfileformats_sepa_sepasequencetype_first",
+      "label": "FIRST",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "SepaSequenceType",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s95"
+        ]
+      },
+      "norm_label": "first",
+      "source_file": "SepaWriter/SepaSequenceType.cs",
+      "source_location": "L13"
+    },
+    {
+      "id": "sepawriter_sepasequencetype_financialfileformats_sepa_sepasequencetype_ooff",
+      "label": "OOFF",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "SepaSequenceType",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s95"
+        ]
+      },
+      "norm_label": "ooff",
+      "source_file": "SepaWriter/SepaSequenceType.cs",
+      "source_location": "L11"
+    },
+    {
+      "id": "sepawriter_sepasequencetype_financialfileformats_sepa_sepasequencetype_rcur",
+      "label": "RCUR",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "SepaSequenceType",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "FinancialFileFormats.SEPA",
+        "scope_chain": [
+          "s95"
+        ]
+      },
+      "norm_label": "rcur",
+      "source_file": "SepaWriter/SepaSequenceType.cs",
+      "source_location": "L15"
     },
     {
       "id": "sepa_tools_windows_properties_assemblyinfo",
@@ -1900,40 +2064,6 @@
       "source_location": "L1"
     },
     {
-      "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer_debtor",
-      "label": "Debtor",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s119"
-        ]
-      },
-      "norm_label": "debtor",
-      "source_file": "SepaWriter/SepaCreditTransfer.cs",
-      "source_location": "L55"
-    },
-    {
-      "id": "sepawriter_sepacredittransfer_financialfileformats_sepa_sepacredittransfer_debtoraccountcurrency",
-      "label": "DebtorAccountCurrency",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s119"
-        ]
-      },
-      "norm_label": "debtoraccountcurrency",
-      "source_file": "SepaWriter/SepaCreditTransfer.cs",
-      "source_location": "L18"
-    },
-    {
       "id": "sepawriter_sepadebittransfer",
       "label": "SepaDebitTransfer.cs",
       "_origin": "ast",
@@ -1942,17 +2072,6 @@
       "file_type": "code",
       "norm_label": "sepadebittransfer.cs",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "sepawriter_sepadebittransfertransaction",
-      "label": "SepaDebitTransferTransaction.cs",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "norm_label": "sepadebittransfertransaction.cs",
-      "source_file": "SepaWriter/SepaDebitTransferTransaction.cs",
       "source_location": "L1"
     },
     {
@@ -1965,141 +2084,6 @@
       "norm_label": "sepaibandata.cs",
       "source_file": "SepaWriter/SepaIbanData.cs",
       "source_location": "L1"
-    },
-    {
-      "id": "sepawriter_sepapaymentnormalization",
-      "label": "SepaPaymentNormalization.cs",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "norm_label": "sepapaymentnormalization.cs",
-      "source_file": "SepaWriter/SepaPaymentNormalization.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "sepawriter_sepapaymentnormalization_financialfileformats_sepa_sepapaymentnormalization_sepad",
-      "label": "SepaD",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s126"
-        ]
-      },
-      "norm_label": "sepad",
-      "source_file": "SepaWriter/SepaPaymentNormalization.cs",
-      "source_location": "L12"
-    },
-    {
-      "id": "sepawriter_sepapaymentnormalization_financialfileformats_sepa_sepapaymentnormalization_sepap",
-      "label": "SepaP",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s126"
-        ]
-      },
-      "norm_label": "sepap",
-      "source_file": "SepaWriter/SepaPaymentNormalization.cs",
-      "source_location": "L13"
-    },
-    {
-      "id": "sepawriter_sepaschema",
-      "label": "SepaSchema.cs",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "norm_label": "sepaschema.cs",
-      "source_file": "SepaWriter/SepaSchema.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "sepawriter_sepasequencetype",
-      "label": "SepaSequenceType.cs",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "norm_label": "sepasequencetype.cs",
-      "source_file": "SepaWriter/SepaSequenceType.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "sepawriter_sepasequencetype_financialfileformats_sepa_sepasequencetype_final",
-      "label": "FINAL",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s95"
-        ]
-      },
-      "norm_label": "final",
-      "source_file": "SepaWriter/SepaSequenceType.cs",
-      "source_location": "L17"
-    },
-    {
-      "id": "sepawriter_sepasequencetype_financialfileformats_sepa_sepasequencetype_first",
-      "label": "FIRST",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s95"
-        ]
-      },
-      "norm_label": "first",
-      "source_file": "SepaWriter/SepaSequenceType.cs",
-      "source_location": "L13"
-    },
-    {
-      "id": "sepawriter_sepasequencetype_financialfileformats_sepa_sepasequencetype_ooff",
-      "label": "OOFF",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s95"
-        ]
-      },
-      "norm_label": "ooff",
-      "source_file": "SepaWriter/SepaSequenceType.cs",
-      "source_location": "L11"
-    },
-    {
-      "id": "sepawriter_sepasequencetype_financialfileformats_sepa_sepasequencetype_rcur",
-      "label": "RCUR",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "FinancialFileFormats.SEPA",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s95"
-        ]
-      },
-      "norm_label": "rcur",
-      "source_file": "SepaWriter/SepaSequenceType.cs",
-      "source_location": "L15"
     },
     {
       "id": "sepawriter_sepatransfer",
@@ -2124,15 +2108,48 @@
       "source_location": "L1"
     },
     {
-      "id": "sepawriter_utils_sepaschemautils",
-      "label": "SepaSchemaUtils.cs",
+      "id": "sepawriter_utils_sepasequencetypeutils",
+      "label": "SepaSequenceTypeUtils.cs",
       "_origin": "ast",
       "community": 2,
       "community_name": "FinancialFileFormats.SEPA",
       "file_type": "code",
-      "norm_label": "sepaschemautils.cs",
-      "source_file": "SepaWriter/Utils/SepaSchemaUtils.cs",
+      "norm_label": "sepasequencetypeutils.cs",
+      "source_file": "SepaWriter/Utils/SepaSequenceTypeUtils.cs",
       "source_location": "L1"
+    },
+    {
+      "id": "sepawriter_utils_sepasequencetypeutils_cs_sepasequencetype",
+      "label": "SepaSequenceType",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "FinancialFileFormats.SEPA",
+      "file_type": "code",
+      "norm_label": "sepasequencetype",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "sepawriter_utils_xmlelementextension",
+      "label": "XmlElementExtension.cs",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "FinancialFileFormats.SEPA",
+      "file_type": "code",
+      "norm_label": "xmlelementextension.cs",
+      "source_file": "SepaWriter/Utils/XmlElementExtension.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "sepawriter_utils_xmlelementextension_cs_xmlelement",
+      "label": "XmlElement",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "FinancialFileFormats.SEPA",
+      "file_type": "code",
+      "norm_label": "xmlelement",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "icloneable",
@@ -2144,34 +2161,6 @@
       "norm_label": "icloneable",
       "source_file": "",
       "source_location": ""
-    },
-    {
-      "id": "sepawriter_sepacredittransfertransaction",
-      "label": "SepaCreditTransferTransaction.cs",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SepaIbanData",
-      "file_type": "code",
-      "norm_label": "sepacredittransfertransaction.cs",
-      "source_file": "SepaWriter/SepaCreditTransferTransaction.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "sepawriter_sepacredittransfertransaction_financialfileformats_sepa_sepacredittransfertransaction_creditor",
-      "label": "Creditor",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SepaIbanData",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "FinancialFileFormats.SEPA",
-        "scope_chain": [
-          "s3"
-        ]
-      },
-      "norm_label": "creditor",
-      "source_file": "SepaWriter/SepaCreditTransferTransaction.cs",
-      "source_location": "L12"
     },
     {
       "id": "sepawriter_sepaibandata_cs_regex",
@@ -2524,12 +2513,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": "creditor",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L138"
+      "source_location": "L136"
     },
     {
       "id": "sepawriter_sepadebittransfer_financialfileformats_sepa_sepadebittransfer_creditoraccountcurrency",
@@ -2541,12 +2530,12 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": "creditoraccountcurrency",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L27"
+      "source_location": "L25"
     },
     {
       "id": "sepawriter_sepadebittransfer_financialfileformats_sepa_sepadebittransfer_personid",
@@ -2558,12 +2547,23 @@
       "metadata": {
         "namespace": "FinancialFileFormats.SEPA",
         "scope_chain": [
-          "s319"
+          "s266"
         ]
       },
       "norm_label": "personid",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L32"
+      "source_location": "L30"
+    },
+    {
+      "id": "sepawriter_sepadebittransfertransaction",
+      "label": "SepaDebitTransferTransaction.cs",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "SepaDebitTransfer",
+      "file_type": "code",
+      "norm_label": "sepadebittransfertransaction.cs",
+      "source_file": "SepaWriter/SepaDebitTransferTransaction.cs",
+      "source_location": "L1"
     },
     {
       "id": "sepawriter_sepadebittransfertransaction_cs_datetime",
@@ -2932,17 +2932,6 @@
       "source_location": ""
     },
     {
-      "id": "ilog",
-      "label": "ILog",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "XmlValidator",
-      "file_type": "code",
-      "norm_label": "ilog",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "sepawriter_utils_xmlvalidator",
       "label": "XmlValidator.cs",
       "_origin": "ast",
@@ -3200,7 +3189,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L155",
+      "source_location": "L153",
       "weight": 1.0
     },
     {
@@ -3212,7 +3201,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L251",
+      "source_location": "L249",
       "weight": 1.0
     },
     {
@@ -3224,7 +3213,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L258",
+      "source_location": "L256",
       "weight": 1.0
     },
     {
@@ -3236,7 +3225,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L263",
+      "source_location": "L261",
       "weight": 1.0
     },
     {
@@ -3248,7 +3237,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L265",
+      "source_location": "L263",
       "weight": 1.0
     },
     {
@@ -3260,7 +3249,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L296",
+      "source_location": "L294",
       "weight": 1.0
     },
     {
@@ -3272,7 +3261,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L300",
+      "source_location": "L298",
       "weight": 1.0
     },
     {
@@ -3284,7 +3273,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L302",
+      "source_location": "L300",
       "weight": 1.0
     },
     {
@@ -3296,7 +3285,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L187",
+      "source_location": "L185",
       "weight": 1.0
     },
     {
@@ -3308,7 +3297,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L189",
+      "source_location": "L187",
       "weight": 1.0
     },
     {
@@ -3320,7 +3309,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L193",
+      "source_location": "L191",
       "weight": 1.0
     },
     {
@@ -3332,7 +3321,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L197",
+      "source_location": "L195",
       "weight": 1.0
     },
     {
@@ -3344,7 +3333,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L199",
+      "source_location": "L197",
       "weight": 1.0
     },
     {
@@ -3356,7 +3345,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L201",
+      "source_location": "L199",
       "weight": 1.0
     },
     {
@@ -3368,7 +3357,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L214",
+      "source_location": "L212",
       "weight": 1.0
     },
     {
@@ -3380,7 +3369,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L221",
+      "source_location": "L219",
       "weight": 1.0
     },
     {
@@ -3694,22 +3683,7 @@
         "ref_token": "Dictionary"
       },
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "sepawriter_utils_xmlvalidator_financialfileformats_sepa_utils_xmlvalidator",
-      "target": "ilog",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "metadata": {
-        "ref_token": "ILog"
-      },
-      "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L17",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -3844,7 +3818,7 @@
         "ref_token": "SepaIbanData"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L138",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -3934,7 +3908,7 @@
         "ref_token": "XmlSchema"
       },
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L33",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -4030,7 +4004,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L138",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -4042,7 +4016,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L27",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -4054,7 +4028,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L32",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -4420,7 +4394,7 @@
         "ref_token": "SepaDebitTransferTransaction"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L20",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -4435,7 +4409,7 @@
         "ref_token": "SepaDebitTransferTransaction"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L235",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
@@ -4450,7 +4424,7 @@
         "ref_token": "SepaDebitTransferTransaction"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L124",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -4465,7 +4439,7 @@
         "ref_token": "SepaSchema"
       },
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L19",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -4719,7 +4693,7 @@
         "ref_token": "IEnumerable"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L235",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
@@ -4764,7 +4738,7 @@
         "ref_token": "SepaDebitTransferTransaction"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L168",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -4779,7 +4753,7 @@
         "ref_token": "SepaDebitTransferTransaction"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L289",
+      "source_location": "L287",
       "weight": 1.0
     },
     {
@@ -4824,7 +4798,7 @@
         "ref_token": "SepaSchema"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L310",
+      "source_location": "L308",
       "weight": 1.0
     },
     {
@@ -4869,7 +4843,7 @@
         "ref_token": "SepaSchema"
       },
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L26",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -4884,7 +4858,7 @@
         "ref_token": "SepaSequenceType"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L235",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
@@ -4914,7 +4888,7 @@
         "ref_token": "ValidationEventArgs"
       },
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L106",
+      "source_location": "L103",
       "weight": 1.0
     },
     {
@@ -4929,7 +4903,7 @@
         "ref_token": "XmlDocument"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L235",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
@@ -4959,7 +4933,7 @@
         "ref_token": "XmlElement"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L289",
+      "source_location": "L287",
       "weight": 1.0
     },
     {
@@ -5019,7 +4993,7 @@
         "ref_token": "XmlNode"
       },
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L68",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -5034,7 +5008,7 @@
         "ref_token": "IEnumerable"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L124",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -5049,7 +5023,7 @@
         "ref_token": "SepaDebitTransferTransaction"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L119",
+      "source_location": "L117",
       "weight": 1.0
     },
     {
@@ -5109,7 +5083,7 @@
         "ref_token": "XmlElement"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L235",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
@@ -5224,7 +5198,7 @@
         "ref_token": "SepaTransfer"
       },
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L20",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -5591,7 +5565,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L20",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -5910,7 +5884,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L15",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -5921,7 +5895,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L9",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -6106,7 +6080,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L119",
+      "source_location": "L117",
       "weight": 1.0
     },
     {
@@ -6117,7 +6091,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L124",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -6128,7 +6102,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L153",
+      "source_location": "L151",
       "weight": 1.0
     },
     {
@@ -6139,7 +6113,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L168",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -6150,7 +6124,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L185",
+      "source_location": "L183",
       "weight": 1.0
     },
     {
@@ -6161,7 +6135,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L235",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
@@ -6172,7 +6146,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L289",
+      "source_location": "L287",
       "weight": 1.0
     },
     {
@@ -6183,7 +6157,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L310",
+      "source_location": "L308",
       "weight": 1.0
     },
     {
@@ -6436,7 +6410,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L106",
+      "source_location": "L103",
       "weight": 1.0
     },
     {
@@ -6447,7 +6421,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L26",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -6458,7 +6432,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "SepaWriter/Utils/XmlValidator.cs",
-      "source_location": "L79",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -6658,7 +6632,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L171",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -6670,7 +6644,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "SepaWriter/SepaDebitTransfer.cs",
-      "source_location": "L159",
+      "source_location": "L157",
       "weight": 1.0
     },
     {
@@ -6711,5 +6685,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d1de27c6d41257ef3612a2107b911383b92b2ffd"
+  "built_at_commit": "20b6d2b9c75b765f68a40283733ade6fa20af51d"
 }

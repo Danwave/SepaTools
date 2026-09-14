@@ -7,8 +7,6 @@ using FinancialFileFormats.SEPA;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.Globalization;
 
 namespace FinancialFileFormats.SEPA
